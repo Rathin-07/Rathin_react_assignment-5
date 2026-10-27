@@ -15,8 +15,8 @@ export function Hero({ technologyCount }: HeroProps) {
             <span className="eyebrow-dot" /> YOUR NEXT CHAPTER STARTS HERE
           </div>
           <h1>
-            Build your stack.<br />
-            <span className={GRADIENT_CLASS}>Build your future.</span>
+            Build your Ideal<br />
+            <span className={GRADIENT_CLASS}>Developer Stack</span>
           </h1>
           <p className="hero-description">
             Discover the technologies that power great products. Curate your toolkit, explore new skills, and create your own path as a developer.
