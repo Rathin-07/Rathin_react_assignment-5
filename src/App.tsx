@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowRight, Check, Zap } from 'lucide-react';
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,7 +10,7 @@ import { TechnologyList } from './components/TechnologyList';
 import { YourStack } from './components/YourStack';
 import { Footer } from './components/Footer';
 
-import { CategoryFilter, Technology } from './types/technology';
+import type { CategoryFilter, Technology } from './types/technology';
 
 const GRADIENT_CLASS = 'gradient-text';
 
@@ -73,7 +75,7 @@ export default function App() {
       <Navbar />
 
       <main>
-        <Hero />
+        <Hero technologyCount={technologies.length} />
 
         <section className="tech-section section-pad" id="technologies">
           <div className="container">

@@ -1,5 +1,6 @@
 import { Search, X } from 'lucide-react';
-import { categories, CategoryFilter, Technology } from '../types/technology';
+import { categories } from '../types/technology';
+import type { CategoryFilter, Technology } from '../types/technology';
 import { TechnologyCard } from './TechnologyCard';
 
 type TechnologyListProps = {

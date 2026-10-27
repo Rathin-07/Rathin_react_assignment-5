@@ -2,7 +2,9 @@ import { ArrowDownRight, ArrowRight, Check, Star, Zap } from 'lucide-react';
 
 const GRADIENT_CLASS = 'gradient-text';
 
-export function Hero() {
+type HeroProps = { technologyCount: number };
+
+export function Hero({ technologyCount }: HeroProps) {
   return (
     <section className="hero-section" id="home">
       <div className="hero-glow glow-one" />
@@ -35,7 +37,7 @@ export function Hero() {
               <span>TS</span>
             </div>
             <p>
-              <strong>15 technologies</strong>
+              <strong>{technologyCount} technologies</strong>
               <br />
               to kickstart your journey
             </p>

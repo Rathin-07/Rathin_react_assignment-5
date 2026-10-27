@@ -1,5 +1,5 @@
 import { ArrowRight, Check, Star } from 'lucide-react';
-import { Technology } from '../types/technology';
+import type { Technology } from '../types/technology';
 
 type TechnologyCardProps = {
   technology: Technology;

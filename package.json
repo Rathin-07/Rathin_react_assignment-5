@@ -4,6 +4,6 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": { "dev": "vite", "build": "tsc -b && vite build", "preview": "vite preview" },
-  "dependencies": { "@vitejs/plugin-react": "latest", "vite": "latest", "typescript": "~5.8.3", "react": "latest", "react-dom": "latest", "react-toastify": "^11.0.5", "lucide-react": "^0.468.0" },
-  "devDependencies": {}
+  "dependencies": { "react": "^19.0.0", "react-dom": "^19.0.0", "react-toastify": "^11.0.5", "lucide-react": "^0.468.0" },
+  "devDependencies": { "typescript": "~5.8.3", "vite": "latest", "@vitejs/plugin-react": "latest", "@types/react": "^19.0.0", "@types/react-dom": "^19.0.0" }
 }

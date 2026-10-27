@@ -1,5 +1,5 @@
 import { ArrowRight, Code2, X } from 'lucide-react';
-import { Technology } from '../types/technology';
+import type { Technology } from '../types/technology';
 
 type YourStackProps = {
   stack: Technology[];
@@ -46,7 +46,13 @@ export function YourStack({ stack, onRemoveFromStack, onRemoveAll }: YourStackPr
           {stack.map((technology, index) => (
             <div className="stack-item" key={technology.id}>
               <span className="stack-index">{String(index + 1).padStart(2, '0')}</span>
-              <img src={technology.icon} alt="" />
+              <img
+                src={technology.icon}
+                alt=""
+                onError={(event) => {
+                  event.currentTarget.style.display = 'none';
+                }}
+              />
               <div className="stack-item-info">
                 <strong>{technology.name}</strong>
                 <span>{technology.category}</span>
